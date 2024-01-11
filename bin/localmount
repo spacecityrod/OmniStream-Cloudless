@@ -1,0 +1,4 @@
+#!/bin/bash
+
+mkdir -p ${HOME}/OmniStream/mnt/
+sudo mount --bind /mnt/sdb1 /home/lnadmin/OmniStream/mnt
