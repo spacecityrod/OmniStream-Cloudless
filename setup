@@ -138,7 +138,7 @@ then
 	echo Skipping OmniStream download
 else
 	echo -n Grabbing OmniStream from GIT...
-	git clone https://github.com/spacecityrod/OmniStream-Cloudless.git > /dev/null 2>&1
+	git clone https://github.com/spacecityrod/OmniStream-Cloudless.git OmniStream > /dev/null 2>&1
 
 	if [[ ${?} = 0 ]]
 	then
