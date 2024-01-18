@@ -31,7 +31,7 @@
       - /tmp:/transcode
       - ${MEDIA}:/Media
       - ${OMNIHOME}/healthchecks/plexcheck:/plexcheck
-      - "${LOGS}:/config/Library/Application Support/Plex Media Server/Logs/"
+      - "${LOGS}/plex:/config/Library/Application Support/Plex Media Server/Logs/"
     networks:
       - OmniNet
     healthcheck:
