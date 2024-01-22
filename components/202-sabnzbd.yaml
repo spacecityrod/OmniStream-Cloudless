@@ -22,11 +22,11 @@
       - traefik.http.routers.sabnzbd.rule=Host(`${SABNZBDNAME}.${MYDOMAIN}`)
       - traefik.http.routers.sabnzbd.tls=true
       - traefik.http.routers.sabnzbd.tls.certresolver=lets-encrypt
-      - traefik.http.services.sabnzbd.loadbalancer.server.port=8080
+      - traefik.http.services.sabnzbd.loadbalancer.server.port=9898
       - traefik.http.routers.sabnzbd.middlewares=${AUTH}
     volumes:
       - ${CONFIGS}/${SABNZBDNAME}:/config
-      - ${MERGEMOUNT}:/cloud
+      - ${MERGEMOUNT}:/data
       - ${LOGS}:/logs
       - ${OMNIHOME}/healthchecks/sabnzbdcheck:/sabnzbdcheck
     networks:

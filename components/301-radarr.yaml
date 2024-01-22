@@ -28,7 +28,7 @@
       - /etc/localtime:/etc/localtime:ro
       - ${CONFIGS}/${RADARRNAME}:/config
       - ${LOGS}:/config/logs
-      - ${MERGEMOUNT}:/cloud
+      - ${MERGEMOUNT}:/data
       - ${OMNIHOME}/healthchecks/radarrcheck:/radarrcheck
     networks:
       - OmniNet

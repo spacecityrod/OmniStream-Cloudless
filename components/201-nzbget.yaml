@@ -15,7 +15,7 @@
       - PUID=${USERID}
     volumes:
       - ${CONFIGS}/${NZBGETNAME}:/config
-      - ${MERGEMOUNT}:/cloud
+      - ${MERGEMOUNT}:/data
       - ${HOME}/logs:/logs
     networks:
       - OmniNet

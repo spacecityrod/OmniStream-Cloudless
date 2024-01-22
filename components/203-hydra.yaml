@@ -25,7 +25,7 @@
       - traefik.http.routers.hydra.middlewares=${AUTH}
     volumes:
       - ${CONFIGS}/${HYDRANAME}:/config
-      - ${MERGEMOUNT}:/cloud
+      - ${MERGEMOUNT}:/data
       - /etc/localtime:/etc/localtime:ro
       - /bin/netstat:/bin/netstat:ro
     networks:

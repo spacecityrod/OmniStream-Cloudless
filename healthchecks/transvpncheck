@@ -2,7 +2,7 @@
 
 APP=TransVPN
 PORT=9091
-MOUNT="/cloud"
+MOUNT="/data"
 LOG="/logs/health"
 
 X=${?}

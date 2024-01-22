@@ -17,7 +17,7 @@
     volumes:
       - ${CONFIGS}/${LIDARRNAME}:/config
       - ${LOGS}:/config/logs
-      - ${MERGEMOUNT}:/cloud
+      - ${MERGEMOUNT}:/data
       - ${OMNIHOME}/healthchecks/lidarrcheck:/lidarrcheck
     labels:
       - "omni=${LIDARRNAME},${MYDOMAIN},yes,yes,yes"

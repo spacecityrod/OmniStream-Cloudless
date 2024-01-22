@@ -2,7 +2,7 @@
 
 APP=Sonarr
 PORT=8989
-MOUNT="/cloud"
+MOUNT="/data"
 LOG="/config/logs/health"
 NS=$(which netstat)
 

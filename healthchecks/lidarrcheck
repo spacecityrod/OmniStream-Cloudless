@@ -2,7 +2,7 @@
 
 APP=Lidarr
 PORT=8686
-MOUNT="/cloud"
+MOUNT="/data"
 LOG="/config/logs/health"
 NS=$(whereis netstat)
 

@@ -1,8 +1,8 @@
 #!/bin/bash
 
 APP=SABnzbd
-PORT=8080
-MOUNT="/cloud"
+PORT=9898
+MOUNT="/data"
 LOG="/logs/health"
 
 X=$(which at)

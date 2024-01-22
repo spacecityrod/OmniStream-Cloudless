@@ -2,7 +2,7 @@
 
 APP=Ombi
 PORT=3579
-MOUNT="/cloud"
+MOUNT="/data"
 LOG="/config/logs/health"
 NS=$(which netstat)
 

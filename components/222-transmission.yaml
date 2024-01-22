@@ -17,7 +17,7 @@
       - UMASK_SET=022
     volumes:
       - ${CONFIGS}/${TRANSNAME}:/config
-      - ${MERGEMOUNT}:/cloud
+      - ${MERGEMOUNT}:/data
     labels:
       - "omni=${TRANSNAME},${MYDOMAIN},yes,yes,yes"
       - autoheal=true
@@ -33,7 +33,7 @@
     networks:
       - OmniNet
     healthcheck:
-      test: ["CMD-SHELL", "netstat -ntlp | grep :9091 && test -f /cloud"]
+      test: ["CMD-SHELL", "netstat -ntlp | grep :9091 && test -f /data"]
       interval: 10s
       timeout: 2s
       retries: 3

@@ -2,7 +2,7 @@
 
 APP=Deluge
 PORT=8112
-MOUNT="/cloud"
+MOUNT="/data"
 LOG="/logs/health"
 
 NS=$(which netstat)

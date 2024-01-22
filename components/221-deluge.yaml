@@ -22,7 +22,7 @@
       - ${LOGS}/deluged.log:/config/deluged.log
       - ${LOGS}:/logs
       - ${DOWNLOADS}:/downloads
-      - ${MERGEMOUNT}:/cloud
+      - ${MERGEMOUNT}:/data
       - ${OMNIHOME}/healthchecks/delugecheck:/delugecheck
     ports:
       - 55956:55956/tcp

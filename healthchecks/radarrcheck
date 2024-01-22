@@ -2,7 +2,7 @@
 
 APP=Radarr
 PORT=7878
-MOUNT="/cloud"
+MOUNT="/data"
 LOG="/config/logs/health"
 NS=$(whereis netstat)
 
